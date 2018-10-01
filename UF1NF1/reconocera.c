@@ -30,29 +30,3 @@ int main()
 	
 	return 0;
 }
-
-
-
-
-
-
-
-/*char letra;
-	printf("Hola, introduce una letra:");
-	scanf("%c",&letra);
-	printf("has introducido la letra : %c", letra);
-	/* letra == 'a' o letra == 'A'*/
-//	if (letra == 'a')
-//		{
-//			printf("\n Muy bien has introducido una letra %c", letra);
-//		}
-//	else if ( letra == 'A')
-//		{
-//			printf("\n Muy bien has introducido una letra %c", letra);
-//		}
-//	else
-//		{
-//			printf("\n No es la letra que queria");
-//		}
-	
-//	printf ("termino programa");*/
