@@ -1,4 +1,4 @@
- /* Funció que demana al usuari per consola i dos numeros i retorna el més gran*/
+ /* FunciÃ³ que demana al usuari per consola i dos numeros i retorna el mÃ©s gran*/
  int mesgran() 
  {
       int num1, num2;
@@ -8,19 +8,19 @@
       scanf("%i",&num2);
       if (num1> num2) 
          {
-          return num1; /*el num1 es el més gran i retorno el numero mes gran*/
+          return num1; /*el num1 es el mÃ©s gran i retorno el numero mes gran*/
          }
       else
          {
-         return num2; /*el num2 es el més gran i retorno el numero mes gran*/
+         return num2; /*el num2 es el mÃ©s gran i retorno el numero mes gran*/
          }
       
  }
  
- 
+ /*funcio que imprimeix la ma del facebook com el like*/
  void holamundo()
  {
- 	   printf("%c%c%c%c%c%c%c%c%c%c%c%c HOLA\n",176,176,176,176,176,176,176,176,178,178,178,178);
+ 	     printf("%c%c%c%c%c%c%c%c%c%c%c%c HOLA\n",176,176,176,176,176,176,176,176,178,178,178,178);
        printf("%c%c%c%c%c%c%c%c%c%c%c%c MUNDO!!\n",176,176,176,176,176,176,178,178,178,176,178,178);
        printf("%c%c%c%c%c%c%c%c%c%c%c%c\n",176,176,176,176,176,176,178,178,176,176,176,178);
        printf("%c%c%c%c%c%c%c%c%c%c%c%c%c\n",176,176,176,176,176,176,178,178,176,176,176,178,178);
