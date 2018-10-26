@@ -92,10 +92,10 @@ void circulo_ASCII(char car,int ancho)
 }
  
  /*funcio que imprimeix la ma del facebook com el like*/
- void holamundo()
+ void like()
  {
- 	     printf("%c%c%c%c%c%c%c%c%c%c%c%c HOLA\n",176,176,176,176,176,176,176,176,178,178,178,178);
-       printf("%c%c%c%c%c%c%c%c%c%c%c%c MUNDO!!\n",176,176,176,176,176,176,178,178,178,176,178,178);
+ 	 printf("%c%c%c%c%c%c%c%c%c%c%c%c HAS \n",176,176,176,176,176,176,176,176,178,178,178,178);
+       printf("%c%c%c%c%c%c%c%c%c%c%c%c ACERTAT!!!\n",176,176,176,176,176,176,178,178,178,176,178,178);
        printf("%c%c%c%c%c%c%c%c%c%c%c%c\n",176,176,176,176,176,176,178,178,176,176,176,178);
        printf("%c%c%c%c%c%c%c%c%c%c%c%c%c\n",176,176,176,176,176,176,178,178,176,176,176,178,178);
        printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n",176,176,176,176,176,176,176,178,178,176,176,176,178,178,178);
