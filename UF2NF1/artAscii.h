@@ -1,21 +1,95 @@
- /* Funció que demana al usuari per consola i dos numeros i retorna el més gran*/
- int mesgran() 
+void linea_ASCII(char car,int ancho)
+{
+ int i;
+ 
+ for(i = 0 ; i < ancho ; ++i) 
  {
-      int num1, num2;
-  	printf("Posa el primer numero"); /* demana el num1*/
-      scanf("%i",&num1);
-  	printf("Posa el primer numero"); /* demana el num2*/
-      scanf("%i",&num2);
-      if (num1> num2) 
-         {
-          return num1; /*el num1 es el més gran i retorno el numero mes gran*/
-         }
-      else
-         {
-         return num2; /*el num2 es el més gran i retorno el numero mes gran*/
-         }
-      
+  printf("%c", car);
  }
+ 
+ printf("\n");
+}
+
+void marco_ASCII(char car,int ancho, int alto)
+{
+ int i,j;
+ 
+ for(i = 0 ; i < alto; ++i )
+ {
+  for(j = 0 ; j < ancho  ; ++j )
+  {
+   if( (i == 0) || (i==(alto-1)) )
+   {
+    printf("%c", car);
+   }
+   else
+   {
+    if( (j == 0) || (j == (ancho-1)) )
+     printf("%c", car);
+    else
+     printf("%c", " ");
+   }
+  }
+  printf("\n");
+ }
+}
+
+void rectangulo_ASCII(char car,int ancho, int alto)
+{
+ int i,j;
+ 
+ for(i = 0 ; i < alto; ++i )
+ {
+  for(j = 0 ; j < ancho  ; ++j )
+  	 { printf("%c", car);
+	  }
+   
+  
+  printf("\n");
+ }
+}
+
+void X_ASCII(char car,int ancho)
+{
+ int i,j;
+ 
+ for(i = 0 ; i < ancho; ++i )
+ {
+  for(j = 0 ; j < ancho  ; ++j )
+  {
+   if( ( i == j) || (ancho-1-i == j) )
+   {
+    printf("%c", car);
+   }
+   else
+   {
+    printf("%c", " ");
+   }
+  }
+  printf("\n");
+ }
+}
+
+void circulo_ASCII(char car,int ancho)
+{
+ int i,j;
+ int centro = ancho/2;
+ for(i = 0 ; i < ancho+1; ++i )
+ {
+  for(j = 0 ; j < ancho+1  ; ++j )
+  {
+   if( sqrt(( i - centro)*( i - centro) +  ( j - centro)*( j - centro)) <= centro )
+   {
+    printf("%c", car);
+   }
+   else
+   {
+    printf("%c", " ");
+   }
+  }
+  printf("\n");
+ }
+}
  
  /*funcio que imprimeix la ma del facebook com el like*/
  void holamundo()
