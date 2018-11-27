@@ -1,6 +1,6 @@
 
 /*Implementa un algoritmo recursivo que sume los n primeros numeros impares.
- Es decir si introducimos por teclado un 3, el resultado ser‡ 9  la suma de los 3 primeros numero impares (1+3+5). la suma de n impares del ejemplo es:
+ Es decir si introducimos por teclado un 3, el resultado ser√† 9  la suma de los 3 primeros numero impares (1+3+5). la suma de n impares del ejemplo es:
 
 suma (3)=2*(3-1)+suma(2)
 suma (2)=2*(2-1)+suma(1)
@@ -21,7 +21,7 @@ main(){
 	printf("introduce un numero entero positivo");
 	scanf("%i",&n);
 	
-	// llamo a la funciÛn 
+	// llamo a la funci√≥n 
 	res=Sumaimpares(n);
 	printf("la suma de los %i primeros impares es %i ",n,Sumaimpares (n));
 }
