@@ -17,3 +17,6 @@ Ejemplo Ejecución del programa:
 
 La forma recursiva incluye el caso base y el caso recursivo.
    
+   ex5.- Realiza un algoritmo recursivo donde el usuario introduce una frase y un carácter. El programa nos indica el número de  veces que aparece dicho carácter en la frase y además  lo cambia por una @, La frase final con el cambio de carácter se debe mostrar por pantalla.
+
+          La forma recursiva incluye el caso base y el caso recursivo.
