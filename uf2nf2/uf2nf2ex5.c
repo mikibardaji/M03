@@ -1,5 +1,5 @@
-/*2.Realiza un programa recursivo donde el usuario introduce una frase y un car‡cter.El programa nos indica cuantas veces
- aparece dicho car‡cter en la frase y adem·s lo canvia por una @.(5p)*/
+/*2.Realiza un programa recursivo donde el usuario introduce una frase y un car√†cter.El programa nos indica cuantas veces
+ aparece dicho car√†cter en la frase y adem√°s lo canvia por una @.(5p)*/
 
 
 #include <stdio.h>
