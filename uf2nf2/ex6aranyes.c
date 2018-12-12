@@ -61,7 +61,7 @@ int pide_valor_positivo(){
 		fflush(stdin);
 		scanf("%i",&valor);
 		if(valor < 0){
-			printf("El valor ha de ser positivo. Escríbelo de nuevo: ");
+			printf("El valor ha de ser positivo. EscrÃ­belo de nuevo: ");
 		}
 	}while(valor<0);
 	
