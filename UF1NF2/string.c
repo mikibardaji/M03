@@ -20,6 +20,7 @@ int main()
 	printf("Terminado el put\n");
 	printf("%s",animal);
 	
+	printf("Escribe tu animal preferido\n");
 	gets(buit); //cadena de string
 	printf("Has escrito\n");
 	puts(buit);
