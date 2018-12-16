@@ -22,5 +22,12 @@ La forma recursiva incluye el caso base y el caso recursivo.
    ex6.- Programa que calcula recursivamente el numero de patas de n arañas.  También variación contando que las pares tienen 6 patas y las impares tienen 8.
    
    ex7.- Programa que transforma un numero en binario de forma recursiva.
+   
+   **ex8**.- Calcular las calorias consumidas de turron si cada dia se come 3 trozos de turrón de 91 calorias, excepto cada 3 dias que se consume 1.
+   
+   **ex9**.- Fractales, calcular el perimetro de todos los lados de un dibujo de fractales a partir de cuadrados, los cuadrados que nacen en los vertices de los cuadrados miden la mitad entera del cuadrado superior.
+   ![Con titulo](fractales.jpg "Fractal")
+   
+   **ex10**.- Calcular cuantos virus hay en un estudio de pandemia, si un virus cada dia se divide en 3.
 
           La forma recursiva incluye el caso base y el caso recursivo.
