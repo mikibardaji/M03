@@ -26,7 +26,7 @@ La forma recursiva incluye el caso base y el caso recursivo.
    **ex8**.- Calcular las calorias consumidas de turron si cada dia se come 3 trozos de turrón de 91 calorias, excepto cada 3 dias que se consume 1.
    
    **ex9**.- Fractales, calcular el perimetro de todos los lados de un dibujo de fractales a partir de cuadrados, los cuadrados que nacen en los vertices de los cuadrados miden la mitad entera del cuadrado superior.
-   ![Fractales](fractales.jpg)
+   ![Fractales](https://github.com/mikibardaji/M03/edit/master/uf2nf2/fractales.jpg)
    
    **ex10**.- Calcular cuantos virus hay en un estudio de pandemia, si un virus cada dia se divide en 3.
 
