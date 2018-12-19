@@ -2,8 +2,8 @@
 
    Exercicis realitzats a classe NF2 Estructures dades
    
-   **ex1**.- Factorial
+   **ex1**.- 
    
-   **ex2**.- Fibonacci
+   **ex2**.- 
    
-   **ex3**.- Conversor binari amb recursivitat
+   **ex3**.- Función que cuenta el número de vocales de una frase.
