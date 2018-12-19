@@ -1,4 +1,4 @@
-//8.-Realiza una función que pida una frase y otra función que escriba la frase al revés.
+//8.-Realiza una funciÃ³n que pida una frase y otra funciÃ³n que escriba la frase al revÃ©s.
 
 //Ejemplo:
 
@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include <wchar.h>
-#include <locale.h>
+
 #include <stdlib.h>
 #include <string.h>
 
@@ -14,7 +14,7 @@ void pide_frase(char *);
 void cadena_al_reves(char *);
 
 int main(){
-	setlocale(LC_ALL, ""); //Para que se puedan printar caracteres especiales (ñ, acentos...)		
+		
 	
 	char frase[1024]=" ";
 
