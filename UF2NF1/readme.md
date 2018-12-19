@@ -20,3 +20,11 @@
    **ex6**.- Juego del 7 y medio
    
    **ex7**.- Juego del ahorcado (strings)
+
+   **ex8**.-Receta de chocolate de la abuela
+  
+   **ex9**.-Bases imperiales
+   
+   **ex10**.-Recursividad sumar pares hasta n
+   
+   **ex11**.-Tragaperras
