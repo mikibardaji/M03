@@ -5,6 +5,7 @@
 
 int mueren();
 void soldados_restantes(int *soldados,int muertos,int reten);
+int pedir_positivo();
 
 int main()
 {
@@ -14,9 +15,9 @@ int main()
 	
 
 		printf("Cuantos soldados dispones?  ");
-		scanf("%i",&soldados);
+		soldados=pedir_positivo();
 		printf("Cuantas bases vas a asaltar? ");
-		scanf("%i",&bases);
+		bases=pedir_positivo();
 		
 		while (soldados>0 && bases >0)
 			{
@@ -61,5 +62,18 @@ void soldados_restantes(int *soldados,int muertos,int reten)
 			}
 	}
 	
+
+int pedir_positivo()
+	{
+	int valor;
+	do
+	{
+	scanf("%i",&valor);
+	if (valor<=0)
+		{
+		printf("introducir valor positivo\n");
+		}
+	}while(valor<=0);
+}
 	
 	

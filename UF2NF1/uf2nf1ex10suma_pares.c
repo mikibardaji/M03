@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 int suma_pares(int num);
+int pedir_positivo();
 
 int main()
 	{
 		int num;
 		printf("Pon el numero y sumare todos los pares que hay hasta el 0... ");
-		scanf("%i",&num);
-		
+		num = pedir_positivo();
+
+
 		int suma = suma_pares(num);
 		if (suma < 0) 
 			{
@@ -37,3 +39,16 @@ int suma_pares(int num)
 			}
 		
 	}
+
+int pedir_positivo()
+	{
+	int valor;
+	do
+	{
+	scanf("%i",&valor);
+	if (valor<=0)
+		{
+		printf("introducir valor positivo\n");
+		}
+	}while(valor<=0);
+}
