@@ -53,4 +53,4 @@ int saber_premio(char d, char e, char f, int mon)
 			return mon;
 		else 
 			return 0;
-	}
+	} 
