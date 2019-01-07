@@ -18,3 +18,5 @@
    **ex7**.- Pide una palabra y luego una función codifica cada letra sumandole 3 , devuelve la palabra "codificada"
    
    **ex8**.- Realiza una función que pida una frase y otra función que escriba la frase al revés.
+   
+   **asterix.c**.- A partir de la terminación de los nombres introducidos, nos determina si la persona es gala, romana, etc (solo implementado los galos, romanos)
