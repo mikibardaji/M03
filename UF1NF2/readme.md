@@ -19,4 +19,6 @@
    
    **ex8**.- Realiza una función que pida una frase y otra función que escriba la frase al revés.
    
+   **ex10**.- Palabra Palindroma.
+   
    **asterix.c**.- A partir de la terminación de los nombres introducidos, nos determina si la persona es gala, romana, etc (solo implementado los galos, romanos)
