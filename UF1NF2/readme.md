@@ -22,3 +22,7 @@
    **ex10**.- Palabra Palindroma.
    
    **asterix.c**.- A partir de la terminación de los nombres introducidos, nos determina si la persona es gala, romana, etc (solo implementado los galos, romanos)
+
+
+
+   **ex31**.- Exercici saber si es capicua.
