@@ -3,7 +3,7 @@
 #define TOPE 50
 
 int palindroma_copiando_otro_string(char *);
-int palindroma(char *)
+int palindroma(char *);
 
 
 int main()
