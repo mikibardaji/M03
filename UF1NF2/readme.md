@@ -27,6 +27,6 @@
   
   **algoritme busqueda binaria** .- A partir d'un vector ordenat, es fa una busqueda a partir de la meitat del vector, a partir de si la meitat es mes petit es busca de la meitat al inici, sinò al final, i per cada subvector es tornar a fer la busqueda pel mig.
   
-  **algoritme bombolla** .- A cada passada es fica el numero més gran al final, despres es torna a començar i es busca el segon per ficar al segon lloc pel final, etc...
-
+  **Ordenació Inserció directa** .- 
+  
    **ex31**.- Exercici saber si es capicua.
