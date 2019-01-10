@@ -4,7 +4,7 @@
 
 int palindroma_copiando_otro_string(char *);
 int palindroma(char *);
-
+int palindroma2(char *);
 
 int main()
 {
@@ -74,3 +74,38 @@ int palindroma_copiando_otro_string(char *palabra)
 			}
 		return 1; /*si llegue al final sin entrar en el if es que son iguales*/	
 }
+
+
+
+
+int palindroma2(char *palabra)
+{
+	int posicion_final = strlen(palabra) -1 ; 
+	/*resto 1 para obtener la ultima letra , strlen da la cantidad de palabras, pero las 	posiciones empiezan por 0...N-1*/
+	int indice = 0; /*recorro bucle desde la posicion inicial*/
+	int parte_atras = posicion_final; /*indice por atras*/
+	while (indice<parte_atras)
+		{
+			if (palabra[indice]!=palabra[parte_atras])
+				{
+				return 0; /* no es palindroma*/			
+				}
+			++indice; /*aqui voy adelante de uno en uno*/
+                        --parte_atras; /*indice que va para detras de uno en uno*/
+		}
+	/*si he salido del bucle, es que nunca he entrado en el if de desigual por tanto es igual*/
+	return 1; /*si lo es*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
