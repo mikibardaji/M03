@@ -1,35 +1,78 @@
-//5.-Programa que pide una frase y un carácter y nos dice cuantas veces aparece ese carácter en la frase.
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
+#define TOPE 10
+int aleatorio (int tope);
+void muestra_array (int *n, int tope);
+int sumar_numeros_array (int *n, int tope);
+int cuantos_alumnos(int vector[],int N,int valor);
+int main()
+	{
+		srand(time(NULL));
+		int n[TOPE]; /*Notas*/
+		int acum[11];
+		int i, final;
 
-int cuenta_letra(char *, char);
-
-int main(){
-	char letra;
-	char frase[1024]=" ";
-	
-	printf("Escribe una frase:\n");
-	gets(frase);
-	printf("Ahora el caracter a buscar:");
-	scanf("%c",&letra);
-	
-	printf("Tu letra aparece %i veces", cuenta_letra(frase, letra));
-	
-	return 0;
-}
-
-int cuenta_letra(char *frase, char letra){
-	int cont = 0, i = 0;
 		
-	for(i=0;i<strlen(frase);++i){
-		if(frase[i] == letra){
-			cont++;
-		}
+		for(i=0;i<TOPE;i++)
+			{ //pone notas a todos los alumnos
+				n[i]=aleatorio(TOPE);
+				
+			}
+				
+		muestra_array (n,TOPE);
+		int nota=0;
+		for(nota=0;nota<=10;nota++)
+			{ /*acumulo y guardo en el nuevo array*/
+				
+				acum[nota] =cuantos_alumnos(n,TOPE,nota); 
+				
+			}
+			/*recorro y muestro el array acumulado*/
+		for(nota=0;nota<=10;nota++)
+			{
+				printf("Alumnos que han sacado un %i son %i\n",nota, acum[nota]);
+			}
+	
+	printf("termino programa");
+		
+		
+		return 0;
 	}
 	
-	return cont;
-}
+	
+	
+	
+int aleatorio (int tope)
+	{
+		int n;
+		n = (rand()%tope)+1;
+			
+		return n;
+	}
+	
 
+	
+void muestra_array (int *n, int tope)
+	{
+		int i;
+		
+		for(i=0;i<tope;i++)
+			{
+				printf("\nEl alumno %i ha sacado un : %i\n", i+1, n[i]);
+			}
+	}
+	
+	
+	
+int cuantos_alumnos(int vector[],int N,int nota){
+	int i=0;
+	int encontrados=0;
+		
+	while(i<N && nota<=vector[i]){
+		
+		if (vector[i]==nota){
+			encontrados = encontrados + 1;//cuandl lo encuentro sumo 1 a los encontrados			
+		}
+		i++;//comparo el siguiente numero del vector		
+	}
+	return encontrados;
+}

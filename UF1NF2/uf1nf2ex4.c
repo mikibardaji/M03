@@ -1,53 +1,55 @@
-//4.- Desenvolupeu un programa que demani a l’usuari el seu nom i escrigui el nombre de caràcters que conté, i quants d’ells són vocals. 
-//No cal tenir en compte les vocals accentuades. Es te que utilitzar dues funcions, una que conti caracters que té, i la segona que conti vocals.
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-
-int cuantas_vocales(char *);
-int longitud_frase(char *);
-
-
-int main(){
-	char frase[1024]="";
-	
-	printf("Escribe tu nombre:\n");
-	gets(frase);
-	
-	printf("Tu nombre tiene %i letras y %i vocales", longitud_frase(frase), cuantas_vocales(frase));
-	
-	return 0;
-}
-
-int longitud_frase(char *frase){
-     int longitud=0;
-     
-	 while(frase[longitud]!='\0'){ 
-	 	longitud = longitud + 1;
-	 }
-	 return longitud;
-}
-
-int cuantas_vocales(char *frase)
-{
-
-int i=0, cuenta_vocales=0;
-char letra;
-
-while(frase[i]!='\0'){
+#define TOPE 10
+int aleatorio (int tope);
+void muestra_array (int *n, int tope);
+int sumar_numeros_array (int *n, int tope);
+int main()
+	{
+		srand(time(NULL));
+		int n[TOPE];
+		int i, final, acum=0;
 		
-		letra = toupper(frase[i]);
-		switch (letra){
-			case 'A':
-			case 'E':
-			case 'I':
-			case 'O':
-			case 'U':	cuenta_vocales++;												
-		}
-		i++;
+		final= TOPE-1;
+		
+		
+		for(i=0;i<final;i++)
+			{
+				n[i]=aleatorio(TOPE);
+			}
+			
+			
+		n[final]=sumar_numeros_array(n,TOPE);
+		
+		
+		muestra_array (n,TOPE);
+		
+		return 0;
 	}
-
-	return cuenta_vocales;
-}
+int aleatorio (int tope)
+	{
+		int n;
+		n = (rand()%tope)+1;
+			
+		return n;
+	}
+	
+int sumar_numeros_array (int *n, int tope)
+	{
+			int i, acum=0;
+		
+		for(i=0;i<tope-1;i++)
+			{
+				acum= acum + n[i];
+			}
+			return acum;
+	}
+	
+void muestra_array (int *n, int tope)
+	{
+		int i;
+		
+		for(i=0;i<tope;i++)
+			{
+				printf("\nEn la posicion %i esta el numero: %i\n", i+1, n[i]);
+			}
+	}
