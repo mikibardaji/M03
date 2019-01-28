@@ -30,3 +30,6 @@
   **Ordenació Inserció directa(ordenarIns_directa.c)** .- 
   
    **ex31**.- Exercici saber si es capicua.
+   
+   
+   **UF1NF2Pt2 DAW1.pdf**-Practica puntuada daw1
