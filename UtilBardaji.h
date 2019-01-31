@@ -65,7 +65,7 @@ int aleatorio (int tope)
 		return n;
 	}
 	
-	
+/*pide un numero y valida  si es positivo sino se debe repetir la entrada*/	
 int introduce_positivo()
 	{
 		int num=0;
@@ -77,7 +77,8 @@ int introduce_positivo()
 		return num;
 	}
 	
-	
+/*pide una letra para seguir o no
+solo devuelve s o n sino pide que repitas la entrada*/
 char introduce_s_n()
 	{
 		char letra;
@@ -85,13 +86,17 @@ char introduce_s_n()
 		{
 			printf("Introduce s o n");
 			scanf("%c",&letra);
-			letra=toupper(letra);
-		}while(letra!='S' && letra != 'N');
+		}while(toupper(letra)!='S' && toupper(letra) != 'N');
 		
 		return letra;		
 		
 	}
 	
+	
+/*busqueda de un valor en un array
+numeros array con valores enteros no ordenados
+tam tamaño del array o posicion hasta la que buscar
+num_buscar valor buscado*/
 int busqueda_lineal(int *numeros,int tam, int num_buscar)
 	{
 		int i, pos, encontrar=0;
@@ -112,7 +117,13 @@ int busqueda_lineal(int *numeros,int tam, int num_buscar)
 
 		return pos;
 	}
-	
+
+
+
+/*busqueda de un valor en un array
+numeros array con valores enteros ordenados
+tam tamaño del array o posicion hasta la que buscar
+num_buscar valor buscado*/
 int busqueda_lineal_ordenado(int *numeros,int tam, int num_buscar)
 	{
 		int i, pos, encontrar=0;
