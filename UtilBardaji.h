@@ -91,3 +91,42 @@ char introduce_s_n()
 		return letra;		
 		
 	}
+	
+int busqueda_lineal(int *numeros,int tam, int num_buscar)
+	{
+		int i, pos, encontrar=0;
+		i=0;
+		pos=-1; /*no encontrado*/
+		while (i<tam && (encontrar==0))
+			{
+				if (numeros[i]==num_buscar)
+					{
+						pos = i;
+						encontrar=1;/*ciertp*/
+					}
+				else
+					{
+						i = i+1;
+					}
+			}
+
+		return pos;
+	}
+	
+int busqueda_lineal_ordenado(int *numeros,int tam, int num_buscar)
+	{
+		int i, pos, encontrar=0;
+		i=0;
+		pos=-1; /*no encontrado*/
+		while (i<tam && numeros[i]<num_buscar)
+			{
+						i = i+1;
+			}
+			
+		if (numeros[i]==num_buscar) /* si es el numero informo la variable posicion*/
+			{
+				pos = i;
+			}
+		return pos;	
+		
+	}
