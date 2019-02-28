@@ -1,5 +1,5 @@
 /*
-Recorre un array de enteros de tama�o tope y los muestra por pantalla.
+Recorre un array de enteros de tamaño tope y los muestra por pantalla.
 n array de una dimension con los valores a mostrar
 tope numero de valores a mostrar
 */
@@ -95,7 +95,7 @@ char introduce_s_n()
 	
 /*busqueda de un valor en un array
 numeros array con valores enteros no ordenados
-tam tama�o del array o posicion hasta la que buscar
+tam tamaño del array o posicion hasta la que buscar
 num_buscar valor buscado*/
 int busqueda_lineal(int *numeros,int tam, int num_buscar)
 	{
@@ -122,7 +122,7 @@ int busqueda_lineal(int *numeros,int tam, int num_buscar)
 
 /*busqueda de un valor en un array
 numeros array con valores enteros ordenados
-tam tama�o del array o posicion hasta la que buscar
+tam tamaño del array o posicion hasta la que buscar
 num_buscar valor buscado*/
 int busqueda_lineal_ordenado(int *numeros,int tam, int num_buscar)
 	{
@@ -141,3 +141,28 @@ int busqueda_lineal_ordenado(int *numeros,int tam, int num_buscar)
 		return pos;	
 		
 	}
+
+/*imprime opciones y devuelve la opción escogida*/
+int imprimirOpciones() {
+
+    int opcion;
+    printf("\n\n");
+    printf("0. Salir \n");
+    printf("1. A%cadir Moto. \n",164);
+    printf("2. Listar Motos disponibles. \n",162);
+    printf("3. Cambiar estado Moto. \n");
+    printf("4. Mostrar calendario. \n");
+    printf("5. Eliminar Moto. \n");
+    printf("6. Alquilar Moto. \n");
+    printf("7. Alquilar Moto por intervalos. \n");
+    opcion = opcion_valida(1,7);
+
+int opcion_valida(int min, int max)
+{
+	int opcion;
+	do{
+	    printf("Escoge opci%cn",162);
+    	    scanf("%i",&opcion);	
+	}while(opcion<min || opcion>max);
+	return opcion;
+}
